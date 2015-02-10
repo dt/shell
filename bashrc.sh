@@ -46,6 +46,8 @@ if [[ -n "$PS1" ]] ; then
     if [[ -n "$SSH_TTY" ]]; then
         PSCOLOR="${boldyellow}"
         PS1HOSTNAME=" $(hostname -s)"
+        PS1HOSTNAME="${PS1HOSTNAME/ezem7/bodega}"
+        PS1HOSTNAME="${PS1HOSTNAME/ezeq27/dev-dt}"
     fi
 
     PS1="${PSCOLOR}[\$(date +%H:%M:%S)]${PS1HOSTNAME} ${boldblue}\w${nocolor} \$ "
