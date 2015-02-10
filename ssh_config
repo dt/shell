@@ -1,0 +1,13 @@
+Host github.com gist.github.com
+  ForwardAgent no
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/github
+
+Host *.prod.foursquare.com fs* ez* dev-* corpapp* prod-app-* asgard bodega
+  ForwardAgent yes
+  User davidt
+  StrictHostKeyChecking no
+
+Host starfish.local
+  User pi
