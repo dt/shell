@@ -45,7 +45,7 @@ if [[ -n "$PS1" ]] ; then
     # If this is a remote shell, make it yellow and include hostname.
     if [[ -n "$SSH_TTY" ]]; then
         PSCOLOR="${boldyellow}"
-        PS1HOSTNAME="$(hostname -s)"
+        PS1HOSTNAME=" $(hostname -s)"
     fi
 
     PS1="${PSCOLOR}[\$(date +%H:%M:%S)]${PS1HOSTNAME} ${boldblue}\w${nocolor} \$ "
