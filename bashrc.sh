@@ -70,7 +70,7 @@ if [[ -n "$PS1" ]] ; then
         . /etc/bash_completion
     fi
 
-    if [ -f ~/.bash_aliases ]; then
+    if [ -f ~/.shell/aliases.sh ]; then
         . ~/.shell/aliases.sh
     fi
 fi
