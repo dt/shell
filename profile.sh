@@ -3,7 +3,7 @@ export PATH=/usr/local/sbin:$PATH
 
 # Check for updates to the shell scripts
 if [[ -d ~/.shell/.git ]]; then
-  (cd ~/.shell && git pull 2> /dev/null > /dev/null &)
+  ( (cd ~/.shell && git pull 2> /dev/null > /dev/null && ./setup.sh) & > /dev/null )
 fi
 
 source ~/.bashrc
