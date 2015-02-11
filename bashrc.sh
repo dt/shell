@@ -19,6 +19,10 @@ fi
 
 # If not running interactively, don't do anything
 if [[ -n "$PS1" ]] ; then
+    # Check for updates to the shell scripts
+    if [[ -d ~/.shell/.git ]]; then
+      ( (cd ~/.shell && git pull 2> /dev/null > /dev/null && ./setup.sh) & > /dev/null )
+    fi
 
     # check the window size after each command and, if necessary,
     # update the values of LINES and COLUMNS.
@@ -73,9 +77,9 @@ if [[ -n "$PS1" ]] ; then
     if [ -f ~/.shell/aliases.sh ]; then
         . ~/.shell/aliases.sh
     fi
-fi
 
-if [[ -n "$SSH_AUTH_SOCK" ]]; then
-    ln -sf $SSH_AUTH_SOCK ~/.authsock
-    export SSH_AUTH_SOCK=~/.authsock
+    if [[ -n "$SSH_AUTH_SOCK" && "$SSH_AUTH_SOCK" != ~/.authsock ]]; then
+        ln -sf $SSH_AUTH_SOCK ~/.authsock
+        export SSH_AUTH_SOCK=~/.authsock
+    fi
 fi
