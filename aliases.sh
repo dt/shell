@@ -39,6 +39,23 @@ alias recommit="git commit --amend --no-edit"
 
 alias kj="killall -9 java"
 
+fixssh () {
+  (
+    SSHPID=`ps -u davidt | grep sshd | cut -d" " -f1 | head -n1`
+    if [[ "$SSHPID" != "" ]]; then
+      NEWSOCK=`find /tmp -name *agent.$SSHPID 2>/dev/null`
+    else
+      echo "Could not find an SSH proc."
+      exit 1
+    fi
+    if [[ "$NEWSOCK" != "" ]]; then
+      echo "~/.authsock -> $NEWSOCK"
+      ln -sf "$NEWSOCK" ~/.authsock
+    else
+      echo "Could not find auth sock for ssd $SSHPID"
+    fi
+  )
+}
 
 for i in ~/.shell/aliases/*; do
   source $i
