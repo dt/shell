@@ -35,7 +35,8 @@ if [[ -n "$PS1" ]] ; then
     export HISTCONTROL=ignoreboth
     export HISTSIZE=10000000
     if [[ -d ~/Dropbox ]]; then
-        cp -f ~/.bash_history ~/Dropbox/.bash_history-$(hostname -s)
+        cp ~/.bash_history ~/Dropbox/.bash_history-$$
+        mv ~/Dropbox/.bash_history-$$ ~/Dropbox/.bash_history-$(hostname -s)
     fi
     shopt -s histappend
 
