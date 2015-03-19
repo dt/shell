@@ -56,7 +56,7 @@ if [[ -n "$PS1" ]] ; then
     fi
 
     PS1="${PSCOLOR}[\$(date +%H:%M:%S)]${PS1HOSTNAME} ${boldblue}\w${nocolor} \$ "
-    PS1="$(stty sane)$(history -a)$PS1"
+    PS1="\$(stty sane)\$(history -a)$PS1"
 
     # If this is an xterm set the title to user@host:dir
     case "$TERM" in
