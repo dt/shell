@@ -5,6 +5,7 @@ export TZ=UTC
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export GOPATH="$HOME/code/go"
+export PATH=$PATH:$GOPATH/bin
 
 export WORKON_HOME=~/.virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME

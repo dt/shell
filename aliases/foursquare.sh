@@ -29,8 +29,8 @@ alias f='cd ~/code/fs'
 alias fp='git fpull'
 alias gf="git fpush origin master"
 alias work='cd ~/code/fs/1'
-alias f1='cd ~/code/fs/1'
-alias f2='cd ~/code/fs/2'
+alias f1='cd ~/code/fs/1 && subl ~/.sublime/fs1.sublime-project'
+alias f2='cd ~/code/fs/2 && subl ~/.sublime/fs2.sublime-project'
 
 alias dev="ssh dev-davidt"
 alias repl='ssh -t dev-davidt screen -D -R -S repl "repl-me ads-api --prod"'
