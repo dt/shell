@@ -39,6 +39,10 @@ alias recommit="git commit --amend --no-edit"
 
 alias kj="killall -9 java"
 
+gr () {
+  cd $GOPATH/src/github.com/*/$1
+}
+
 fixssh () {
   (
     SSHPID=`ps -u davidt | grep sshd | cut -d" " -f1 | head -n1`
