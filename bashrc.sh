@@ -7,6 +7,11 @@ export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export GOPATH="$HOME/code/go"
 export PATH=$PATH:$GOPATH/bin
 
+if [[ -d ~/lib/go ]]; then
+    export GOROOT=~/lib/go
+    export PATH="$GOROOT/bin:$PATH"
+fi
+
 export WORKON_HOME=~/.virtualenvs
 export PIP_VIRTUALENV_BASE=$WORKON_HOME
 
