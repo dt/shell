@@ -25,10 +25,8 @@ function re() {
   python src/python/foursquare/source_code_analysis/scala_import_rewriter.py --rewrite_from "com.foursquare.$1" --rewrite_to "com.foursquare.$2" src/jvm test/jvm verification/src
 }
 
-alias f='cd ~/code/fs'
 alias fp='git fpull'
 alias gf="git fpush origin master"
-alias work='cd ~/code/fs/1'
 alias f1='cd ~/code/fs/1 && subl ~/.sublime/fs1.sublime-project'
 alias f2='cd ~/code/fs/2 && subl ~/.sublime/fs2.sublime-project'
 

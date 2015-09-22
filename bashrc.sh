@@ -4,20 +4,13 @@ export LANGUAGE=en_US.UTF-8
 export TZ=UTC
 
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export GOPATH="$HOME/code/go"
-export PATH=$PATH:$GOPATH/bin
 
-if [[ -d ~/lib/go ]]; then
-    export GOROOT=~/lib/go
-    export PATH="$GOROOT/bin:$PATH"
-fi
-
-export WORKON_HOME=~/.virtualenvs
-export PIP_VIRTUALENV_BASE=$WORKON_HOME
+for i in ~/.shell/lang.d/*; do
+  source $i
+done
 
 if [[ "$(uname)" == "Darwin" ]]; then
     export EDITOR="subl -w"
-    export JAVA_HOME=$(/usr/libexec/java_home -v 1.8.0_40)
     if [ -f `brew --prefix`/etc/bash_completion ]; then
       . `brew --prefix`/etc/bash_completion
     fi
