@@ -1,0 +1,62 @@
+[branch]
+	autosetuprebase = always
+[user]
+	name = David Taylor
+	email = tinystatemachine@gmail.com
+[core]
+	ignorecase = true
+[color]
+	status = auto
+	diff = auto
+	branch = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	ru = remote
+	fuck-you = !git rebase && git push --force origin master
+	unadd = reset HEAD
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[merge]
+	tool = sublimerge
+
+[mergetool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\" --command \"sublimerge_diff_views\"
+trustExitCode = false
+
+[diff]
+	tool = sublimerge
+
+[difftool "sublimerge"]
+	cmd = subl -n --wait \"$REMOTE\" \"$LOCAL\" --command \"sublimerge_diff_views {\\\"left_read_only\\\": true, \\\"right_read_only\\\": true}\"
+
+[core]
+	legacyheaders = false
+	excludesfile = /Users/davidt/.gitignore
+	trustctime = false
+	preloadindex = true
+	editor = subl -w
+[repack]
+	usedeltabaseoffset = true
+
+[branch "master"]
+    remote = origin
+    merge = refs/heads/master
+	rebase = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+  renames = true
+[help]
+	autocorrect = -1
+[grep]
+	linenumber = true
+[log]
+	decorate = full
+[push]
+	default = simple
+[mergetool "sublime"]
+	cmd = subl -w $MERGED
+	trustExitCode = false
