@@ -11,3 +11,7 @@ alias gm="git commit -a -m"
 alias gs="git status"
 alias s="git status"
 alias recommit="git commit --amend --no-edit"
+
+
+alias p='git pull'
+alias gh="git push origin master"
