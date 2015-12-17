@@ -11,7 +11,19 @@ alias gm="git commit -a -m"
 alias gs="git status"
 alias s="git status"
 alias recommit="git commit --amend --no-edit"
+alias gcp="git checkout --patch"
+alias gap="git add --patch"
+alias gcv="git commit -v"
+alias gd="git diff"
 
 
 alias p='git pull'
 alias gh="git push origin master"
+
+function gco() {
+  if [ -z "$@" ]; then
+  	git checkout master
+  else
+  	git checkout "$@"
+  fi
+}
