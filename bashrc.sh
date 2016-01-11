@@ -3,7 +3,7 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export TZ=UTC
 
-export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
 for i in ~/.shell/lang.d/*; do
   source $i

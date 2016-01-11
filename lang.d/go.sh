@@ -1,9 +1,8 @@
 export GOPATH="$HOME/code/go"
 export PATH=$PATH:$GOPATH/bin
 
-if [[ -d /data/loko/infrastructure-go/current/ ]]; then
-    export GOROOT=/data/loko/infrastructure-go/current/
-    export PATH="$GOROOT/bin:$PATH"
+if [[ -d /usr/local/go/bin ]]; then
+    export PATH="/usr/local/go/bin:$PATH"
 fi
 
 gr () {
