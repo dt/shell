@@ -21,9 +21,9 @@ alias p='git pull'
 alias gh="git push origin master"
 
 function gco() {
-  if [ -z "$@" ]; then
+  if [ -z "$*" ]; then
   	git checkout master
   else
-  	git checkout "$@"
+	git checkout "$*"
   fi
 }
