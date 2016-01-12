@@ -7,3 +7,7 @@ if [[ -d /Users/david/code/google-cloud-sdk ]]; then
 	# The next line enables shell command completion for gcloud.
 	source '/Users/david/code/google-cloud-sdk/completion.bash.inc'
 fi
+
+if [[ -f /.active ]]; then
+    sudo rm /.active
+fi
