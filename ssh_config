@@ -1,3 +1,6 @@
+Host *
+  UseRoaming no
+
 Host github.com gist.github.com
   ForwardAgent no
   HostName github.com
