@@ -33,7 +33,7 @@ trustExitCode = false
 
 [core]
 	legacyheaders = false
-	excludesfile = /Users/davidt/.gitignore
+	excludesfile = /Users/david/.gitignore_global
 	trustctime = false
 	preloadindex = true
 	editor = subl -w
