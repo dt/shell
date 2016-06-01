@@ -33,10 +33,6 @@ if [[ -n "$PS1" ]] ; then
     # ignore successive dupes and leading whitespace lines for history
     export HISTCONTROL=ignoreboth
     export HISTSIZE=10000000
-    if [[ -d ~/Dropbox ]]; then
-        cp ~/.bash_history ~/Dropbox/.bash_history-$$
-        mv ~/Dropbox/.bash_history-$$ ~/Dropbox/.bash_history-$(hostname -s)
-    fi
     shopt -s histappend
 
     nocolor="\[\033[00m\]"
