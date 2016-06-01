@@ -37,6 +37,7 @@ trustExitCode = false
 	trustctime = false
 	preloadindex = true
 	editor = subl -w
+	pager = less -x4
 [repack]
 	usedeltabaseoffset = true
 
