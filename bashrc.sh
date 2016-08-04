@@ -9,6 +9,10 @@ for i in ~/.shell/lang.d/*; do
   source $i
 done
 
+for i in ~/.shell/tools.d/*; do
+  source $i
+done
+
 if [[ "$(uname)" == "Darwin" ]]; then
     export EDITOR="subl -w"
     if [ -f `brew --prefix`/etc/bash_completion ]; then
