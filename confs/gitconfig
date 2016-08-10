@@ -3,6 +3,7 @@
 [user]
 	name = David Taylor
 	email = tinystatemachine@gmail.com
+	signingkey = 01D8438FDFAE4E9A
 [core]
 	ignorecase = true
 [color]

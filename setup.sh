@@ -12,6 +12,7 @@ ln -sf ~/.shell/confs/ssh_config ~/.ssh/config
 
 mkdir -p ~/.gnupg/
 ln -sf ~/.shell/confs/gpg.conf ~/.gnupg/gpg.conf
+ln -sf ~/.shell/confs/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 
 ln -sf ~/.shell/confs/slate ~/.slate
 
