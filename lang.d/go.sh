@@ -1,4 +1,7 @@
 export GOPATH="$HOME/code/go"
+if [ -f "$HOME/.gce" ]; then
+	export GOPATH="$HOME/code/gce"
+fi
 export PATH=$PATH:$GOPATH/bin
 
 if [[ -d ~/go/bin ]]; then
