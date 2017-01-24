@@ -1,6 +1,6 @@
 Host *
-  UseRoaming no
   ServerAliveInterval 60
+  UseKeychain yes
 
 Host github.com gist.github.com
   ForwardAgent no
