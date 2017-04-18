@@ -1,6 +1,8 @@
+Include os_config
+
 Host *
   ServerAliveInterval 60
-  UseKeychain yes
+  IdentityFile ~/.ssh/id_rsa
 
 Host github.com gist.github.com
   ForwardAgent no
