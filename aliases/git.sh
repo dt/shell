@@ -19,3 +19,7 @@ alias gd="git diff"
 
 alias gp='git pull'
 alias gh="git push origin master"
+
+if hash hub 2>/dev/null; then
+	alias git=hub
+fi
