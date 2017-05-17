@@ -1,0 +1,30 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.rulers": [80, 100],
+    "files.trimTrailingWhitespace": true,
+    "go.formatOnSave": true,
+    "go.formatTool": "goimports",
+    "editor.detectIndentation": true,
+    "editor.tabSize": 2,
+    "files.exclude": {
+        "**/*~": true
+    },
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0,
+    "cSpell.userWords": [
+      "callsites",
+      "struct",
+      "Errorf",
+      "Sprintf",
+      "pgerror",
+      "unencrypted",
+      "callsite",
+      "loggable"
+    ],
+    "[cpp]": {
+      "editor.quickSuggestions": false
+    },
+    "[c]": {
+      "editor.quickSuggestions": false
+    }
+  }
