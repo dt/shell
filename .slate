@@ -1,8 +1,0 @@
-bind 0:cmd;alt;ctrl snapshot a save-to-disk
-bind 0:cmd;alt activate-snapshot a
-bind 9:cmd;alt;ctrl snapshot b save-to-disk
-bind 9:cmd;alt activate-snapshot b
-config windowHintsShowIcons true
-config windowHintsIgnoreHiddenWindows false
-config windowHintsSpread true
-bind space:ctrl hint qwertyuiop
