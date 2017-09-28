@@ -14,7 +14,7 @@ for i in ~/.shell/tools.d/*; do
 done
 
 if [[ "$(uname)" == "Darwin" ]]; then
-    export EDITOR="subl -w"
+    export EDITOR="code -w"
     if [ -f `brew --prefix`/etc/bash_completion ]; then
       . `brew --prefix`/etc/bash_completion
     fi
