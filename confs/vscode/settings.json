@@ -4,6 +4,7 @@
     "files.trimTrailingWhitespace": true,
     "go.formatOnSave": true,
     "go.formatTool": "goimports",
+    "go.gocodeAutoBuild": false,
     "editor.detectIndentation": true,
     "editor.tabSize": 2,
     "files.exclude": {
@@ -26,5 +27,6 @@
     },
     "[c]": {
       "editor.quickSuggestions": false
-    }
+    },
+    "git.autorefresh": false
   }
