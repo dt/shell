@@ -8,7 +8,8 @@
     "editor.detectIndentation": true,
     "editor.tabSize": 2,
     "files.exclude": {
-        "**/*~": true
+        "**/*~": true,
+        "vendor/**": true
     },
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
