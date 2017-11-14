@@ -16,3 +16,16 @@ function fr() {
     perl -pi -e "s@$1$3@$2@g" $files
   fi
 }
+
+function workon() {
+  g co $1
+  echo '
+  tell application "Visual Studio Code" to activate
+  tell application "System Events"
+	  keystroke "k" using command down
+	  keystroke "w" using command down
+  end tell
+  ' | osascript
+  # would be nice to tell vscode to run `View: Close All Editors` here?
+  code $(g diff --name-only $(g merge-base HEAD upstream/master)..HEAD)
+}
