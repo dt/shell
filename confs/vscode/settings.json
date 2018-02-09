@@ -9,19 +9,20 @@
     "editor.tabSize": 2,
     "files.exclude": {
         "**/*~": true,
-        "vendor/**": true
+        "vendor/**": true,
+        "build/builder_home/**": true
     },
     "workbench.editor.enablePreview": false,
     "window.zoomLevel": 0,
     "cSpell.userWords": [
-      "callsites",
-      "struct",
-      "Errorf",
-      "Sprintf",
-      "pgerror",
-      "unencrypted",
       "callsite",
-      "loggable"
+      "callsites",
+      "Errorf",
+      "loggable",
+      "pgerror",
+      "Sprintf",
+      "struct",
+      "unencrypted",
     ],
     "[cpp]": {
       "editor.quickSuggestions": false
@@ -29,5 +30,5 @@
     "[c]": {
       "editor.quickSuggestions": false
     },
-    "git.autorefresh": false
-  }
+    "git.autorefresh": false,
+}
