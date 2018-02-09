@@ -35,7 +35,7 @@ if [[ -n "$PS1" ]] ; then
     [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
     # ignore successive dupes and leading whitespace lines for history
-    export HISTCONTROL=ignoreboth
+    export HISTCONTROL=ignoreboth:erasedupes
     export HISTSIZE=10000000
     shopt -s histappend
 
