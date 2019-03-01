@@ -7,7 +7,3 @@ if [[ -d /opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk ]]
 	# The next line enables shell command completion for gcloud.
 	source '/opt/homebrew-cask/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc'
 fi
-
-if [[ -f /.active ]]; then
-    sudo rm /.active
-fi

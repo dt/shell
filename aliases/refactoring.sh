@@ -29,3 +29,7 @@ function workon() {
   # would be nice to tell vscode to run `View: Close All Editors` here?
   code $(g diff --name-only $(g merge-base HEAD upstream/master)..HEAD)
 }
+
+pretty () {
+  python -c "import json; import sys; obj = json.loads(sys.stdin.read()); print json.dumps(obj['$1'] if '$1' else obj, sort_keys = True, indent = 2)"
+}
