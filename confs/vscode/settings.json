@@ -2,9 +2,6 @@
 {
     "editor.rulers": [80, 100],
     "files.trimTrailingWhitespace": true,
-    "go.formatFlags": ["-tab", "2"],
-    "go.formatTool": "/Users/david/go/src/github.com/cockroachdb/cockroach/bin/crlfmt",
-    "go.gocodeAutoBuild": false,
     "editor.detectIndentation": true,
     "editor.tabSize": 2,
     "files.exclude": {
@@ -16,35 +13,53 @@
     "window.zoomLevel": 0,
     "cSpell.userWords": [
       "Errorf",
+      "Eventf",
+      "Infof",
+      "LDFLAGS",
+      "MVCC",
       "Sprintf",
       "Stmts",
+      "Warningf",
       "callsite",
       "callsites",
       "cockroachdb",
       "crdb",
+      "deps",
+      "leveldb",
       "loggable",
       "pgerror",
+      "randutil",
       "roachpb",
+      "rocksdb",
       "serverpb",
-      "struct",
-      "unencrypted",
-      "MVCC",
       "sst",
       "ssts",
-      "Eventf",
-      "deps",
-      "Warningf",
-      "Infof",
-      "LDFLAGS",
-      "rocksdb",
-      "leveldb",
+      "struct",
+      "unencrypted"
     ],
-    "[cpp]": {
-      "editor.quickSuggestions": false
-    },
-    "[c]": {
-      "editor.quickSuggestions": false
-    },
     "git.autorefresh": false,
     "workbench.activityBar.visible": true,
-}
+    "go.useLanguageServer": true,
+    "go.languageServerExperimentalFeatures": {
+            "diagnostics": true // for diagnostics as you type
+    },
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
+    },
+    "gopls": {
+        "usePlaceholders": true, // add parameter placeholders when completing a function
+        "enhancedHover": true,   // experimental to improve quality of hover (will be on by default soon)
+    },
+    "runOnSave.statusMessageTimeout": 3000,
+    "runOnSave.commands": [{
+      "match": ".*\\.go$",
+      "command": "/Users/david/go/src/github.com/cockroachdb/cockroach/bin/crlfmt -w -tab 2 -fast ${file}",
+      "runIn": "backend",
+      "runningStatusMessage": "crlfmt'ing ${fileBasename}",
+      "finishStatusMessage": "${fileBasename} crlfmt'ed"
+    }]
+  }
