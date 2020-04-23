@@ -1,65 +1,94 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.rulers": [80, 100],
-    "files.trimTrailingWhitespace": true,
-    "editor.detectIndentation": true,
-    "editor.tabSize": 2,
-    "files.exclude": {
-        "**/*~": true,
-        "vendor/**": true,
-        "build/builder_home/**": true
+  "editor.disableTranslate3d": true,
+  "editor.rulers": [
+    80,
+    100
+  ],
+  "files.trimTrailingWhitespace": true,
+  "editor.detectIndentation": true,
+  "editor.tabSize": 2,
+  "files.exclude": {
+    "**/*~": true,
+    "vendor/**": true,
+    "build/builder_home/**": true
+  },
+  "workbench.editor.enablePreview": false,
+  "window.zoomLevel": 0,
+  "cSpell.userWords": [
+    "Errorf",
+    "Eventf",
+    "Infof",
+    "LDFLAGS",
+    "MVCC",
+    "MYSQLOUTFILE",
+    "Newf",
+    "PGDUMP",
+    "Postgres",
+    "Sprintf",
+    "Stmts",
+    "Unimplementedf",
+    "Vals",
+    "Warningf",
+    "Wrapf",
+    "backupccl",
+    "bytea",
+    "callsite",
+    "callsites",
+    "cockroachdb",
+    "crdb",
+    "deps",
+    "descs",
+    "distsqlpb",
+    "grpc",
+    "humanizeutil",
+    "importccl",
+    "intervalccl",
+    "jobspb",
+    "leveldb",
+    "loggable",
+    "mysqldump",
+    "mysqlout",
+    "nullif",
+    "pgcopy",
+    "pgerror",
+    "pkey",
+    "randutil",
+    "roachpb",
+    "rocksdb",
+    "sampledataccl",
+    "serverpb",
+    "sst",
+    "ssts",
+    "storageccl",
+    "struct",
+    "testutils",
+    "unencrypted"
+  ],
+  "git.autorefresh": false,
+  "workbench.activityBar.visible": true,
+  "files.eol": "\n",
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
     },
-    "workbench.editor.enablePreview": false,
-    "window.zoomLevel": 0,
-    "cSpell.userWords": [
-      "Errorf",
-      "Eventf",
-      "Infof",
-      "LDFLAGS",
-      "MVCC",
-      "Sprintf",
-      "Stmts",
-      "Warningf",
-      "callsite",
-      "callsites",
-      "cockroachdb",
-      "crdb",
-      "deps",
-      "leveldb",
-      "loggable",
-      "pgerror",
-      "randutil",
-      "roachpb",
-      "rocksdb",
-      "serverpb",
-      "sst",
-      "ssts",
-      "struct",
-      "unencrypted"
-    ],
-    "git.autorefresh": false,
-    "workbench.activityBar.visible": true,
-    "go.useLanguageServer": true,
-    "go.languageServerExperimentalFeatures": {
-            "diagnostics": true // for diagnostics as you type
+    // Optional: Disable snippets, as they conflict with completion ranking.
+    "editor.snippetSuggestions": "none",
+  },
+  "[go.mod]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
     },
-    "[go]": {
-        "editor.snippetSuggestions": "none",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        },
-    },
-    "gopls": {
-        "usePlaceholders": true, // add parameter placeholders when completing a function
-        "enhancedHover": true,   // experimental to improve quality of hover (will be on by default soon)
-    },
-    "runOnSave.statusMessageTimeout": 3000,
-    "runOnSave.commands": [{
-      "match": ".*\\.go$",
-      "command": "/Users/david/go/src/github.com/cockroachdb/cockroach/bin/crlfmt -w -tab 2 -fast ${file}",
-      "runIn": "backend",
-      "runningStatusMessage": "crlfmt'ing ${fileBasename}",
-      "finishStatusMessage": "${fileBasename} crlfmt'ed"
-    }]
-  }
+  },
+  "gopls": {
+    // Add parameter placeholders when completing a function.
+    "usePlaceholders": true,
+    // If true, enable additional analyses with staticcheck.
+    // Warning: This will significantly increase memory usage.
+    "staticcheck": false,
+  },
+  "workbench.sideBar.location": "left"
+}

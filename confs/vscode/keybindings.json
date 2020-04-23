@@ -4,5 +4,13 @@
 	{ "key": "cmd+t",                 "command": "workbench.action.quickOpen" },
   { "key": "cmd+r",                 "command": "workbench.action.gotoSymbol" },
   { "key": "cmd+shift+w",	        "command": "rewrap.rewrapComment" },
-  {"key": "cmd+l",           "command": "rewrap.rewrapComment", "when": "editorTextFocus"}
+  {
+    "key": "cmd+l",
+    "command": "rewrap.rewrapComment",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+`",
+    "command": "workbench.action.terminal.focus"
+  }
 ]
