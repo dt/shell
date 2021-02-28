@@ -1,7 +1,9 @@
 #!/bin/bash
 ln -sf ~/.shell/profile.sh ~/.profile
+ln -sf ~/.shell/zprofile.sh ~/.zprofile
 ln -sf ~/.shell/profile.sh ~/.bash_profile
 ln -sf ~/.shell/bashrc.sh ~/.bashrc
+ln -sf ~/.shell/zshrc.sh ~/.zshrc
 ln -sf ~/.shell/inputrc ~/.inputrc
 
 ln -sf ~/.shell/confs/git/gitconfig ~/.gitconfig
