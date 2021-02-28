@@ -1,6 +1,6 @@
 # Check for updates to the shell scripts
 if [[ -d ~/.shell/.git ]]; then
-   (( cd ~/.shell && git pull && ./setup.sh ) > /dev/null 2&>1) || echo "cannot update ~/.shell automatically"
+   (( cd ~/.shell && git pull && ./setup.sh ) > /dev/null 2>/dev/null >/dev/null) || echo "cannot update ~/.shell automatically"
 fi
 
 if [[ "$(uname)" == "Darwin" ]]; then

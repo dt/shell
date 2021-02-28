@@ -3,7 +3,13 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export TZ=UTC
 
-export PATH=~/bin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+if [[ -d /opt/homebrew/bin ]]; then
+  export PATH=/opt/homebrew/bin:$PATH
+fi
+
+export PATH=~/bin:$PATH
 
 for i in ~/.shell/lang.d/*; do
   source $i
