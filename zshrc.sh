@@ -34,3 +34,7 @@ if [ -f ~/.shell/aliases.sh ]; then
     . ~/.shell/aliases.sh
 fi
 
+
+# oh-my-zsh runs less command with -R (repaint).
+# You can disable this behavior by adding the following line at the end of your ~/.zshrc
+unset LESS;
