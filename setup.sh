@@ -10,7 +10,8 @@ ln -sf ~/.shell/confs/git/gitconfig ~/.gitconfig
 ln -sf ~/.shell/confs/git/gitignore_global ~/.gitignore_global
 
 mkdir -p ~/.ssh
-ln -sf ~/.shell/confs/ssh/ssh_config ~/.ssh/config
+ln -sf ~/.shell/confs/ssh/common_config ~/.ssh/common_config
+echo "Include os_config" > ~/.ssh/config
 if [[ "$OSTYPE" == "darwin"* ]]; then
 	ln -sf ~/.shell/confs/ssh/ssh_config_osx ~/.ssh/os_config
 else
