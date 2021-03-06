@@ -8,7 +8,3 @@ export PATH=~/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/local
 for i in ~/.shell/lang.d/*; do
   source $i
 done
-
-for i in ~/.shell/tools.d/*; do
-  source $i
-done

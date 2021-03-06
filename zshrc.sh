@@ -41,6 +41,10 @@ compinit
 # load bashcompinit for some old bash completions
 autoload bashcompinit && bashcompinit
 
+for i in ~/.shell/tools.d/*; do
+  source $i
+done
+
 # oh-my-zsh runs less command with -R (repaint).
 # You can disable this behavior by adding the following line at the end of your ~/.zshrc
 unset LESS;
