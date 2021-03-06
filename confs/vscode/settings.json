@@ -10,7 +10,7 @@
   "editor.tabSize": 2,
   "files.exclude": {
     "**/*~": true,
-    "vendor/**": true,
+    "bazel-*/": true,
     "build/builder_home/**": true
   },
   "workbench.editor.enablePreview": false,
@@ -90,5 +90,13 @@
     // Warning: This will significantly increase memory usage.
     "staticcheck": false,
   },
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "files.watcherExclude": {
+    "vendor/**": true
+  },
+  "search.exclude": {
+    "c-deps/**": true,
+    "pkg/ui/yarn**": true,
+    "vendor/**": true
+  }
 }
