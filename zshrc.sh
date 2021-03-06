@@ -27,13 +27,19 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_EXPIRE_DUPS_FIRST
 setopt EXTENDED_HISTORY
 
-autoload -Uz compinit && compinit
-# load bashcompinit for some old bash completions
-autoload bashcompinit && bashcompinit
-
 if [ -f ~/.shell/aliases.sh ]; then
     source ~/.shell/aliases.sh
 fi
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+fi
+
+autoload -Uz compinit
+compinit
+
+# load bashcompinit for some old bash completions
+autoload bashcompinit && bashcompinit
 
 # oh-my-zsh runs less command with -R (repaint).
 # You can disable this behavior by adding the following line at the end of your ~/.zshrc

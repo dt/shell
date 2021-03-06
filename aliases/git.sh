@@ -1,9 +1,6 @@
 
 alias g="git"
 
-# IF git-completion is defined, define it for "g" shortcut too.
-declare -f -F __git_complete > /dev/null && __git_complete g __git_main
-
 alias gb="git branch --color -v --list -v"
 alias gg="git grep"
 alias gp="git pull --rebase"
