@@ -7,18 +7,6 @@ if [[ -d "${GOPATH}/src/github.com/cockroachdb/cockroach/bin" ]]; then
   export PATH=${PATH}:${GOPATH}/src/github.com/cockroachdb/cockroach/bin
 fi
 
-if [ -f ~/.roachprod/zsh-completion.sh ]; then
-  . ~/.roachprod/zsh-completion.sh
-elif [ -f ~/.roachprod/bash-completion.sh ]; then
-  . ~/.roachprod/bash-completion.sh
-fi
-
-if [ -f ~/.workload.zsh ]; then
-  . ~/.workload.zsh
-elif [ -f ~/.workload.bash ]; then
-  . ~/.workload.bash
-fi
-
 if [ -f ~/.cockroach.lic ]; then
   export COCKROACH_DEV_LICENSE="$(cat ~/.cockroach.lic)"
 fi

@@ -6,12 +6,13 @@ fi
 if [[ "$(uname)" == "Darwin" ]]; then
   # Path to your oh-my-zsh installation.
   export ZSH="/Users/david/.oh-my-zsh"
-  ZSH_THEME="robbyrussell"
-  plugins=(history-substring-search)
-  source $ZSH/oh-my-zsh.sh
-
   export EDITOR="code -w"
 fi
+
+ZSH_THEME="robbyrussell"
+plugins=(history-substring-search zsh-completions)
+source $ZSH/oh-my-zsh.sh
+
 
 
 # make less more friendly for non-text input files, see lesspipe(1)
@@ -31,9 +32,8 @@ autoload -Uz compinit && compinit
 autoload bashcompinit && bashcompinit
 
 if [ -f ~/.shell/aliases.sh ]; then
-    . ~/.shell/aliases.sh
+    source ~/.shell/aliases.sh
 fi
-
 
 # oh-my-zsh runs less command with -R (repaint).
 # You can disable this behavior by adding the following line at the end of your ~/.zshrc
