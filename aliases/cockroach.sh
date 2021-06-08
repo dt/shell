@@ -12,8 +12,8 @@ if [ -f ~/.cockroach.lic ]; then
 fi
 
 function b() {
-  cd ~/code/cockroach-branches/$1/src/github.com/cockroachdb/cockroach
-  export GOPATH=~/code/cockroach-branches/$1
+  cd ~/code/cockroach/branches/$1/src/github.com/cockroachdb/cockroach
+  export GOPATH=~/code/cockroach/branches/$1
 }
 
 function cla() {
