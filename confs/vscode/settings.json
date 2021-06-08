@@ -14,7 +14,6 @@
     "build/builder_home/**": true
   },
   "workbench.editor.enablePreview": false,
-  "window.zoomLevel": 0,
   "cSpell.userWords": [
     "Errorf",
     "Eventf",
@@ -68,28 +67,6 @@
   "git.autorefresh": false,
   "workbench.activityBar.visible": true,
   "files.eol": "\n",
-  "go.useLanguageServer": true,
-  "[go]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-    },
-    // Optional: Disable snippets, as they conflict with completion ranking.
-    "editor.snippetSuggestions": "none",
-  },
-  "[go.mod]": {
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-    },
-  },
-  "gopls": {
-    // Add parameter placeholders when completing a function.
-    "usePlaceholders": true,
-    // If true, enable additional analyses with staticcheck.
-    // Warning: This will significantly increase memory usage.
-    "staticcheck": false,
-  },
   "workbench.sideBar.location": "left",
   "files.watcherExclude": {
     "vendor/**": true
@@ -98,5 +75,13 @@
     "c-deps/**": true,
     "pkg/ui/yarn**": true,
     "vendor/**": true
-  }
+  },
+  "editor.formatOnSave": true,
+  "go.useLanguageServer": true,
+  "gopls": {
+    // If true, enable additional analyses with staticcheck.
+    // Warning: This will significantly increase memory usage.
+    "staticcheck": false,
+  },
+  "go.formatTool": "goimports",
 }

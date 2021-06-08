@@ -1,16 +1,24 @@
-// Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to override the defaultsauto[]
 [
-  { "key": "cmd+p",                 "command": "workbench.action.showAllSymbols" },
-	{ "key": "cmd+t",                 "command": "workbench.action.quickOpen" },
-  { "key": "cmd+r",                 "command": "workbench.action.gotoSymbol" },
-  { "key": "cmd+shift+w",	        "command": "rewrap.rewrapComment" },
-  {
-    "key": "cmd+l",
-    "command": "rewrap.rewrapComment",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "alt+`",
-    "command": "workbench.action.terminal.focus"
-  }
+    {
+        "key": "shift+cmd+r",
+        "command": "-rerunSearchEditorSearch",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+p",
+        "command": "-workbench.action.quickOpen"
+    }
 ]
