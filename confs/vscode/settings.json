@@ -5,7 +5,6 @@
     80,
     100
   ],
-  "files.trimTrailingWhitespace": true,
   "editor.detectIndentation": true,
   "editor.tabSize": 2,
   "files.exclude": {
@@ -84,4 +83,9 @@
     "staticcheck": false,
   },
   "go.formatTool": "goimports",
+  "editor.largeFileOptimizations": false,
+  "editor.trimAutoWhitespace": false,
+  "json.maxItemsComputed": 50000,
+  "terminal.integrated.scrollback": 100000,
+  "diffEditor.renderSideBySide": false,
 }
