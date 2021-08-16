@@ -1,3 +1,8 @@
 Host *
 	UseKeychain yes
 	AddKeysToAgent yes
+
+Host gceworker
+  HostName 35.237.214.103
+  ForwardAgent yes
+  RemoteForward /run/user/1070/gnupg/S.gpg-agent /Users/david/.gnupg/S.gpg-agent.extra
