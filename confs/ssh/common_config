@@ -1,8 +1,9 @@
-Include os_config
 
 Host *
   ServerAliveInterval 60
   IdentityFile ~/.ssh/id_rsa
+
+Include os_config
 
 Host github.com gist.github.com
   ForwardAgent no
