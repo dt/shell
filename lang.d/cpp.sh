@@ -11,3 +11,5 @@ if [[ -d /usr/local/opt/libedit ]]; then
     export CPPFLAGS="-I/usr/local/opt/libedit/include"
 fi
 
+export MACOSX_DEPLOYMENT_TARGET=12.1
+
