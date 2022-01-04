@@ -10,7 +10,3 @@ alias s="git status"
 alias recommit="git commit --amend --no-edit"
 alias gd="git diff"
 alias gf="git push -f"
-
-if hash hub 2>/dev/null; then
-	alias git=hub
-fi
