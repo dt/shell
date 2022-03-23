@@ -79,7 +79,6 @@
     "pkg/ui/yarn**": true,
     "vendor/**": true
   },
-  "editor.formatOnSave": true,
   "go.useLanguageServer": true,
   "gopls": {
     // If true, enable additional analyses with staticcheck.
@@ -92,4 +91,9 @@
   "terminal.integrated.scrollback": 100000,
   "diffEditor.renderSideBySide": false,
   "extensions.ignoreRecommendations": true,
+  "githubPullRequests.remotes": [
+    "upstream"
+  ],
+  "workbench.startupEditor": "none",
+  "go.toolsManagement.autoUpdate": true,
 }
