@@ -11,7 +11,7 @@ if [ -f ~/.cockroach.lic ]; then
   export COCKROACH_DEV_LICENSE="$(cat ~/.cockroach.lic)"
 fi
 
-function b() {
+function brch() {
   cd ~/code/cockroach/branches/$1/src/github.com/cockroachdb/cockroach
   export GOPATH=~/code/cockroach/branches/$1
 }
