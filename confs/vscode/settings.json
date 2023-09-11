@@ -70,7 +70,6 @@
   "git.autorefresh": false,
   "workbench.activityBar.visible": true,
   "files.eol": "\n",
-  "workbench.sideBar.location": "left",
   "files.watcherExclude": {
     "vendor/**": true
   },
@@ -96,4 +95,5 @@
   ],
   "workbench.startupEditor": "none",
   "go.toolsManagement.autoUpdate": true,
+  "bazel.queriesShareServer": true,
 }
