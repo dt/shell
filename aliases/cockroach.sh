@@ -21,3 +21,5 @@ function cla() {
     -d '{"state": "success", "context":"license/cla", "description": "curl"}' \
     https://api.github.com/repos/cockroachdb/cockroach/statuses/$1
 }
+
+export COCKROACH_ROACHPROD_INSECURE=1
