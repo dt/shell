@@ -68,7 +68,6 @@
     "Wrapf"
   ],
   "git.autorefresh": false,
-  "workbench.activityBar.visible": true,
   "files.eol": "\n",
   "files.watcherExclude": {
     "vendor/**": true
