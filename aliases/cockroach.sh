@@ -22,4 +22,6 @@ function cla() {
     https://api.github.com/repos/cockroachdb/cockroach/statuses/$1
 }
 
+alias ghapi='curl -s -H "Authorization: token $(git config --get cockroach.githubtoken)"'
+
 export COCKROACH_ROACHPROD_INSECURE=1
