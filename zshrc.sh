@@ -19,8 +19,10 @@ source $ZSH/oh-my-zsh.sh
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
 HISTFILE=~/.zsh_history
-HISTSIZE=1000000
-SAVEHIST=$HISTSIZE
+
+export HISTSIZE=1000000000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
 
 unsetopt share_history
 setopt INC_APPEND_HISTORY
