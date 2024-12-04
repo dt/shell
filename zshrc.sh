@@ -10,7 +10,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
 fi
 
 ZSH_THEME="robbyrussell"
-plugins=(history-substring-search zsh-completions)
+plugins=(history-substring-search)
 source $ZSH/oh-my-zsh.sh
 
 
