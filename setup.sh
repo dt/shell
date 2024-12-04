@@ -18,10 +18,6 @@ else
 	ln -sf ~/.shell/confs/ssh/ssh_config_linux ~/.ssh/os_config
 fi
 
-mkdir -p ~/.gnupg/
-ln -sf ~/.shell/confs/gpg/gpg.conf ~/.gnupg/gpg.conf
-ln -sf ~/.shell/confs/gpg/gpg-agent.conf ~/.gnupg/gpg-agent.conf
-
 ln -sf ~/.shell/confs/slate ~/.slate
 
 mkdir -p ~/Library/Application\ Support/Code/User
