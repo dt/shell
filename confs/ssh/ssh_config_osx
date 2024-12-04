@@ -6,4 +6,3 @@ Host gceworker
   HostName 35.237.214.103
   ForwardAgent yes
   IdentityFile ~/.ssh/google_compute_engine
-  RemoteForward /run/user/1070/gnupg/S.gpg-agent /Users/david/.gnupg/S.gpg-agent.extra
