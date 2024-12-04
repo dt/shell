@@ -1,7 +1,11 @@
 [user]
 	name = David Taylor
 	email = tinystatemachine@gmail.com
-	signingkey = 01D8438FDFAE4E9A
+  signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC4LsXEzgV2o6qtKZ9PFZwDsUH7cZ/35ID/EKetVAOFi0dTyymPmuLrVLw46kmLMA3y0qVUypUU94Qs9Yuwy4orV12CWgAy+sVEHnUZ/Llnx6EZxXZ3jeVf6NXtCnEn12Di4to4hupzwAgJpIpN/IAkHxIhkSwkNIa7CpePTojrFrocOwgifABdLeKOGadNwrouPW2HxvdOLNT+LCLlcNFoXEjGPKpuORwL2IqldmF5Tq+ZXCUufp7LEITw3CHHAN4mS5025mHqQAFS+k6Q2UQSrxi2U78W04yllUN9ZW5hpLrxSabRP9m6tIRyo0IBTloFeaKviVVlI+mJq37wh2KnWkw5/+MBoeCV/MHr5Z0rm1I3kQlZNROhIrku+faRWD+k5lyt082tamkgEhgyaKc7hNi/pugz8uM5/kkZN735fsrBr00vphFLdZ0zfwm6DJOEctq7fQ8jzjycUnjowj3oVVvtrm4Z4uVT5vPTBuwkb+pLFO8gbxFGMU+76DnnHKUpqg2QHf5yaqRpjznk9+lLKi21qhO8KiGKg1pW9Tr7/N6uwfG1Aotlkmx1NrsGa1UuqhSoKhQwKF+g210qLFfZJ0nh+i8Ei5zkkkDrWUcpE2gUWo+X93G/aCNWW6A8wZ+zv7gHY7tNP1f+vy0rJnMdnEPOKMHrfGL0GiB1dZaI3Q==
+[gpg]
+	format = ssh
+[commit]
+  gpgsign = true
 [core]
 	ignorecase = true
 	excludesfile = ~/.gitignore_global
@@ -41,8 +45,6 @@
 	ru = remote
 	unadd = reset HEAD
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-[commit]
-	gpgsign = true
 [hub]
 	protocol = ssh
 [filter "lfs"]
