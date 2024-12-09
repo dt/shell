@@ -1,7 +1,7 @@
 
 alias g="git"
 
-alias gb="git branch --color -v --list -v"
+alias gb="git branch --color -v --list -v --sort=committerdate"
 alias gg="git grep"
 alias gp="git pull --rebase"
 alias gm="git commit -a -m"
