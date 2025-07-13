@@ -103,6 +103,7 @@
     "pkg/ui/yarn**": true,
     "vendor/**": true
   },
+  "go.goroot": "/opt/homebrew/Cellar/go/1.23.3/libexec",
   "go.useLanguageServer": true,
   "gopls": {
     // If true, enable additional analyses with staticcheck.
@@ -123,4 +124,11 @@
   "bazel.queriesShareServer": true,
   "gitlens.launchpad.indicator.enabled": false,
   "git.openRepositoryInParentFolders": "never",
+  "gitlens.plusFeatures.enabled": false,
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
+  "workbench.editorAssociations": {
+    "git-rebase-todo": "default"
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
 }
