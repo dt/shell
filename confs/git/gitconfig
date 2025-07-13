@@ -12,6 +12,8 @@
 	trustctime = false
 	preloadindex = true
 	pager = less -x4
+	fsmonitor = true
+	untrackedCache = true
 [grep]
 	linenumber = true
 [diff]
