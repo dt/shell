@@ -21,6 +21,17 @@ function cla() {
     https://api.github.com/repos/cockroachdb/cockroach/statuses/$1
 }
 
+function roachdns() {
+  roachprod adminurl $1 --ips --insecure=false |
+    awk '{printf "%04d\t%s\n", NR, $0}' | # prepend the padded node IDs.
+    sed -e 's,https://\(.*\):26258/,\1,g' | # remove the HTTPS part.
+    while read node ip; do
+      host="${1}-${node}.roachprod.crdb.io."
+      gcloud dns --project=cockroach-shared record-sets ${2:-update} "${host}" --rrdatas="${ip}" \
+        --type="A" --zone="roachprod" --ttl=60
+    done
+}
+
 alias ghapi='curl -s -H "Authorization: token $(git config --get cockroach.githubtoken)"'
 
 export COCKROACH_ROACHPROD_INSECURE=1
