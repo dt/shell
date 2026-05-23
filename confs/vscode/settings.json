@@ -131,4 +131,6 @@
     "git-rebase-todo": "default"
   },
   "github.copilot.nextEditSuggestions.enabled": true,
+  "claudeCode.preferredLocation": "panel",
+  "workbench.colorTheme": "Dark Modern",
 }
