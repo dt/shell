@@ -2,7 +2,10 @@ Host *
 	UseKeychain yes
 	AddKeysToAgent yes
 
+Host gceworker-david
+  ForwardAgent yes
+  IdentityFile ~/.ssh/google_compute_engine
+
 Host gceworker
-  HostName 35.237.214.103
   ForwardAgent yes
   IdentityFile ~/.ssh/google_compute_engine
